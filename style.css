@@ -1,0 +1,47 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  height: 100vh;
+  background: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
+
+.menu a {
+  margin-right: 28px;
+  text-decoration: none;
+  color: #111;
+  font-size: 22px;
+}
+
+/* INICIO */
+.inicio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CURSOR */
+.cursor {
+  font-size: 40px;
+  animation: blink 1.2s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
