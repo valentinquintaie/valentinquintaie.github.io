@@ -10,6 +10,8 @@ body {
   color: #000;
 }
 
+/* ---------- MENÚ ---------- */
+
 .menu {
   position: fixed;
   top: 24px;
@@ -17,6 +19,7 @@ body {
   display: flex;
   gap: 22px;
   font-size: 18px;
+  z-index: 10;
 }
 
 .menu a {
@@ -27,11 +30,12 @@ body {
 .menu a:hover {
   opacity: 0.6;
 }
+
+/* ---------- INICIO (GUION) ---------- */
+
 .inicio {
   margin-top: 80px;
-  padding-left: 20px;
-  width: 100%;
-  text-align: left;
+  padding-left: 24px;
 }
 
 .cursor {
@@ -47,7 +51,9 @@ body {
   51%, 100% {
     opacity: 0;
   }
-/* ÍNDICE PINTURAS */
+}
+
+/* ---------- ÍNDICE (PINTURAS / TEXTOS / RESTOS) ---------- */
 
 .indice {
   position: fixed;
@@ -69,67 +75,15 @@ body {
   opacity: 1;
 }
 
-/* CONTENIDO PINTURAS */
+/* ---------- CONTENIDO GENERAL ---------- */
 
-.pinturas {
+.contenido {
   margin-left: 200px;
   padding-top: 80px;
   padding-right: 40px;
 }
 
-.serie {
-  margin-bottom: 120px;
-}
-
-.serie h2 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 60px;
-}
-
-/* IMÁGENES */
-
-figure {
-  margin-bottom: 80px;
-}
-
-figure img {
-  width: 100%;
-  max-width: 900px;
-  display: block;
-  margin: 0 auto;
-}
-
-figcaption {
-  font-size: 12px;
-  opacity: 0.6;
-  text-align: right;
-  max-width: 900px;
-  margin: 6px auto 0 auto;
-}
-
-/* ----- PINTURAS ----- */
-
-.indice {
-  position: fixed;
-  top: 120px;
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.indice a {
-  text-decoration: none;
-  color: black;
-}
-
-.contenido {
-  margin-left: 200px;
-  padding-top: 120px;
-}
+/* ---------- SERIES ---------- */
 
 .serie {
   margin-bottom: 120px;
@@ -142,21 +96,41 @@ figcaption {
   margin-bottom: 60px;
 }
 
+/* ---------- OBRAS ---------- */
+
 .obra {
   margin-bottom: 80px;
 }
 
 .obra img {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   display: block;
   margin: 0 auto;
 }
 
 .ficha {
   font-size: 12px;
+  opacity: 0.6;
   text-align: right;
-  max-width: 700px;
-  margin: 4px auto 0 auto;
+  max-width: 800px;
+  margin: 6px auto 0 auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .indice {
+    font-size: 13px;
+  }
+
+  .contenido {
+    margin-left: 24px;
+    padding-top: 160px;
+  }
 }
 
