@@ -27,10 +27,11 @@ body {
 .menu a:hover {
   opacity: 0.6;
 }
-
 .inicio {
-  margin-top: 80px;   /* baja el guión debajo del menú */
-  margin-left: 20px;  /* alineado con el menú */
+  margin-top: 80px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: left;
 }
 
 .cursor {
