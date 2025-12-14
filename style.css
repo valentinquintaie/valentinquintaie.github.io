@@ -47,4 +47,65 @@ body {
   51%, 100% {
     opacity: 0;
   }
+/* ÍNDICE PINTURAS */
+
+.indice {
+  position: fixed;
+  top: 80px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
 }
+
+.indice a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+}
+
+.indice a:hover {
+  opacity: 1;
+}
+
+/* CONTENIDO PINTURAS */
+
+.pinturas {
+  margin-left: 200px;
+  padding-top: 80px;
+  padding-right: 40px;
+}
+
+.serie {
+  margin-bottom: 120px;
+}
+
+.serie h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+
+/* IMÁGENES */
+
+figure {
+  margin-bottom: 80px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: right;
+  max-width: 900px;
+  margin: 6px auto 0 auto;
+}
+
