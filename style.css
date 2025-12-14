@@ -1,60 +1,17 @@
- * {
+/* reset mínimo */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: serif;
-  background-color: #e6e6e6;
-  background-image: url("fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #111;
-  min-height: 100vh;
-}
-
-
-nav {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.inicio {
+  background: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   height: 100vh;
-  position: relative;
 }
 
-
-.inicio {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.guion {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  font-size: clamp(32px, 6vw, 64px);
-  animation: blink 1.2s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-body {
-  margin: 0;
-  background: #fff;
-}
-
+/* menú */
 .menu {
   position: fixed;
   top: 24px;
@@ -66,7 +23,25 @@ body {
   margin-right: 28px;
   text-decoration: none;
   color: #111;
-  font-size: clamp(16px, 2vw, 20px);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(18px, 2.2vw, 22px);
 }
 
+/* inicio */
+.inicio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* guión */
+.cursor {
+  font-size: 28px;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
