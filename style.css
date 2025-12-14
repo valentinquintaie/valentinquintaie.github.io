@@ -1,22 +1,22 @@
-/* reset mínimo */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
+  height: 100vh;
   background: #eee;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  height: 100vh;
 }
 
-/* menú */
+/* MENU */
 .menu {
   position: fixed;
   top: 24px;
   left: 24px;
-  z-index: 10;
 }
 
 .menu a {
@@ -26,7 +26,7 @@ body {
   font-size: clamp(18px, 2.2vw, 22px);
 }
 
-/* inicio */
+/* INICIO */
 .inicio {
   height: 100vh;
   display: flex;
@@ -34,10 +34,10 @@ body {
   justify-content: center;
 }
 
-/* guión */
+/* CURSOR */
 .cursor {
-  font-size: 28px;
-  animation: blink 1.2s steps(1) infinite;
+  font-size: 32px;
+  animation: blink 1.2s steps(1, start) infinite;
 }
 
 @keyframes blink {
