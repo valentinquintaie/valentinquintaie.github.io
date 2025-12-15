@@ -1,57 +1,32 @@
 /* ---------- TEXTOS (solo sección textos) ---------- */
 
-/* Contenedor general */
+/* CONTENEDOR GENERAL */
 .textos {
-  max-width: 720px;
-  margin-left: 0;
+  max-width: 760px;
+  margin-left: 220px; /* empuja el texto a la derecha, lejos del menú/índice */
+  padding-right: 40px;
 }
 
 /* ---------- TÍTULO DEL TEXTO ---------- */
 
 .titulo-texto {
-  font-size: 42px;
-  font-weight: normal;
-  line-height: 1.1;
-  margin-bottom: 48px;
-  max-width: 720px;
-}
-
-/* No pisa el menú */
-@media (min-width: 769px) {
-  .titulo-texto {
-    margin-top: 0;
-  }
+  font-size: 44px;
+  font-weight: 800; /* más amarillista */
+  line-height: 1.05;
+  margin-bottom: 32px;
+  max-width: 760px;
+  letter-spacing: -0.5px;
 }
 
 /* ---------- CUERPO DEL TEXTO ---------- */
 
 .cuerpo-texto {
   font-size: 17px;
-  line-height: 1.7;
-  max-width: 720px;
+  line-height: 1.55; /* menos exagerado */
+  max-width: 760px;
 }
 
 .cuerpo-texto p {
-  margin-bottom: 20px;
-}
-
-/* ---------- MOBILE ---------- */
-
-@media (max-width: 768px) {
-
-  .titulo-texto {
-    font-size: 32px;
-    margin-bottom: 36px;
-  }
-
-  .cuerpo-texto {
-    font-size: 18px;
-    line-height: 1.75;
-  }
-@media (max-width: 768px) {
-  .textos {
-    margin-left: 0;
-  }
-}
+  margin-bottom: 14px;
 
 
