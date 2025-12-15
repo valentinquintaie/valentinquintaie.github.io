@@ -27,6 +27,37 @@
 }
 
 .cuerpo-texto p {
-  margin-bottom: 14px;
+  margin-bottom: 14px; /* menos espacio entre párrafos */
+}
 
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  /* CONTENEDOR */
+  .textos {
+    margin-left: 24px;   /* se alinea con el sistema mobile existente */
+    margin-right: 24px;
+    padding-right: 0;
+  }
+
+  /* TÍTULO */
+  .titulo-texto {
+    font-size: 38px;     /* mucho más grande en celu */
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  /* CUERPO */
+  .cuerpo-texto {
+    font-size: 20px;     /* CLAVE: lectura cómoda en celu */
+    line-height: 1.6;
+  }
+
+  .cuerpo-texto p {
+    margin-bottom: 16px;
+  }
+}
 
