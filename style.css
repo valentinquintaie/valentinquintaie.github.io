@@ -77,60 +77,6 @@ body {
 
 /* ---------- CONTENIDO GENERAL ---------- */
 
-.contenido {
-  margin-left: 200px;
-  padding-top: 80px;
-  padding-right: 40px;
-}
+.con
 
-/* ---------- SERIES ---------- */
-
-.serie {
-  margin-bottom: 120px;
-}
-
-.titulo-serie {
-  text-align: center;
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 60px;
-}
-
-/* ---------- OBRAS ---------- */
-
-.obra {
-  margin-bottom: 80px;
-}
-
-.obra img {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
-}
-
-.ficha {
-  font-size: 12px;
-  opacity: 0.6;
-  text-align: right;
-  max-width: 800px;
-  margin: 6px auto 0 auto;
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media (max-width: 768px) {
-  .menu {
-    font-size: 16px;
-  }
-
-  .indice {
-    font-size: 13px;
-  }
-
-  .contenido {
-    margin-left: 24px;
-    padding-top: 160px;
-  }
-}
 
