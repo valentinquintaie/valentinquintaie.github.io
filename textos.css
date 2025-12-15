@@ -1,67 +1,66 @@
-/* ---------- TEXTOS (solo sección textos) ---------- */
+/* ================================
+   TEXTOS — RESET LIMPIO
+   ================================ */
 
-/* CONTENEDOR GENERAL */
-.textos {
+/* CONTENEDOR GENERAL DEL TEXTO */
+main.contenido.textos {
   max-width: 760px;
-  margin-left: auto;      /* empuja todo a la derecha */
-  margin-right: 40px;
-  padding-top: 80px;      /* baja del menú */
+  margin-left: auto;      /* lo empuja a la derecha */
+  margin-right: 48px;
+  padding-top: 120px;     /* baja del menú */
 }
 
-/* ---------- TÍTULO DEL TEXTO ---------- */
+/* ================================
+   TÍTULO
+   ================================ */
 
 .titulo-texto {
   font-size: 44px;
-  font-weight: 700;       /* más periodístico */
+  font-weight: 700;       /* más amarillista */
   line-height: 1.15;
-  margin-bottom: 36px;
-  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
 }
 
-/* ---------- CUERPO DEL TEXTO ---------- */
+/* ================================
+   CUERPO DEL TEXTO
+   ================================ */
 
 .cuerpo-texto {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.55;
 }
 
 .cuerpo-texto p {
-  margin-bottom: 14px;    /* menos aire entre párrafos */
+  margin-bottom: 16px;   /* menos aire entre párrafos */
 }
 
-/* ---------- DESKTOP GRANDE ---------- */
-
-@media (min-width: 1024px) {
-  .textos {
-    margin-right: 60px;
-  }
-}
-
-/* ---------- MOBILE ---------- */
+/* ================================
+   MOBILE
+   ================================ */
 
 @media (max-width: 768px) {
 
-  .textos {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 140px;   /* baja bien del menú fijo */
-    padding-left: 24px;
-    padding-right: 24px;
+  main.contenido.textos {
+    max-width: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 160px;  /* deja respirar menú + índice */
   }
 
   .titulo-texto {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.18;
-    margin-bottom: 28px;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 24px;
   }
 
   .cuerpo-texto {
-    font-size: 21px;      /* CLAVE: mucho más grande */
-    line-height: 1.65;
+    font-size: 21px;     /* GRANDE, legible */
+    line-height: 1.6;
   }
 
   .cuerpo-texto p {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
+
