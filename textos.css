@@ -1,77 +1,43 @@
-/* =========================
-   ÍNDICE — PANFLETO / BARRICADA
-   ========================= */
-
-/* contenedor del índice */
-.indice {
-  position: fixed;
-  top: 80px;
-  left: 24px;
-  width: 220px;
-  font-family: Georgia, "Times New Roman", serif;
+/* RESET SUAVE */
+* {
+  box-sizing: border-box;
 }
 
-/* grupo (Libro, Fanfiction, etc.) */
-.grupo {
-  margin-bottom: 28px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-/* título del grupo */
-.grupo-titulo {
-  display: block;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.55;
-  margin-bottom: 10px;
+/* ESTRUCTURA GENERAL */
+.contenido.textos {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px 80px;
 }
 
-/* corte político */
-.grupo-titulo::after {
-  content: " —";
-  opacity: 0.6;
+/* ARTÍCULO */
+.contenido.textos article {
+  width: 100%;
+  max-width: 620px;   /* desktop: mitad de pantalla aprox */
 }
 
-/* links de textos */
-.indice a {
-  display: block;
-  font-size: 14px;
-  line-height: 1.3;
-  margin-bottom: 6px;
-  text-decoration: none;
-  color: #000;
-  opacity: 0.75;
+/* TÍTULO */
+.titulo-texto {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.8em;
 }
 
-/* hover seco */
-.indice a:hover {
-  opacity: 1;
+/* CUERPO */
+.cuerpo-texto {
+  text-align: justify;
 }
 
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 768px) {
-  .indice {
-    position: static;
-    width: auto;
-    margin: 24px 20px;
-  }
-
-  .grupo {
-    margin-bottom: 22px;
-  }
-
-  .grupo-titulo {
-    font-size: 11px;
-    margin-bottom: 8px;
-  }
-
-  .indice a {
-    font-size: 15px;
-    line-height: 1.25;
-  }
+/* PÁRRAFOS */
+.cuerpo-texto p {
+  margin: 0 0 1.4em 0;
+  line-height: 1.35;
 }
 
+/* -------- MOBILE -------- */
 
