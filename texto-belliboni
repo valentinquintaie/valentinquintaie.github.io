@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>La caída de Belliboni</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="textos.css">
+</head>
+
+<body>
+
+  <nav class="menu">
+    <a href="pinturas.html">pinturas</a>
+    <a href="textos.html">textos</a>
+    <a href="restos.html">restos</a>
+  </nav>
+
+  <aside class="indice">
+    <div class="grupo">
+      <span class="grupo-titulo">Fanfiction</span>
+      <a href="texto-madonna.html">Madonna desempoderada</a>
+      <a href="texto-belliboni.html" class="activo">La caída de Belliboni</a>
+    </div>
+  </aside>
+
+  <main class="contenido textos">
+
+    <article>
+
+      <h1 class="titulo-texto">
+        La caída de Belliboni
+      </h1>
+
+      <div class="cuerpo-texto">
+
+        <p>
+          Una columna de banderas rotas hacen una pared al costado de la policía. Y, a pesar de los forcejeos, Eduardo Belliboni tiene las piernas rígidas como dos macetas. Los camiones hidrantes avanzan. Dentro del Congreso habla la Píparo. Afuera, una nube de gas pimienta se come a los manifestantes. Llueven botellas de agua. El periodista de C5N se acerca a un grupo de policías que se dispersan. Los diputados de izquierda salen del recinto y se dirigen a la calle. Se escuchan dos disparos a lo lejos. Dos botellas vuelan al cielo. Se cayó Belliboni.
+        </p>
+
+        <p>
+          Hoy, 4 días después, me escribe un milico. Llega a mi casa vestido de civil, sin el uniforme, esta vez no se lo pedí. Le cuesta trabajo encontrar lugar para estacionar y me pide que le tire las llaves por el balcón y lo espere. Entra, pero no me da tiempo para quedar desnudo. Lo saludo y pasa al baño. Sale en bolas, agarra el celular y le responde a la novia y a un amigo de las fuerzas. Lo abrazo por atrás y veo de reojo parte de la pantalla: en la conversación hay un link con una foto de Miriam Bregman, intento pero no alcanzo a ver lo que dice. Se oscurece la pantalla. Acabo. Se cayó Belliboni.
+        </p>
+
+        <p>
+          Arman un círculo alrededor de Belliboni. Se lo ve tirado en el suelo en posición fetal. Gira y se tapa el rostro con el dorso de la mano. Se juntan militantes y periodistas. Un médico le toma la presión. Toma agua de una botella. Se tira agua en la nuca. Belliboni se levanta del suelo, se desacomoda la gorra cuando choca la cabeza contra el pecho del médico que le sostiene los brazos. Cayó Belliboni para impedir que avancen los camiones hidrantes-, dice el periodista de C5N con un micrófono en la mano. Belliboni pega una vuelta de 270 grados sobre su eje y se aleja de la cámara caminando. ¿Eduardo, cómo estás?, pregunta el periodista de C5N. Mejor-, responde Belliboni. ¿Te caíste? ¿Te tiraron?-, repregunta el periodista. ¿Pero qué importa?-, me digo a mí mismo: ¡Se cayó Belliboni!
+        </p>
+
+        <p>
+          Recibo un audio de Jeremías el 2 febrero a las 15:32: No sé de qué hablás, son policías, clase baja, no sé qué querés decir, los traen del interior, por eso son marrones, me chupa un huevo de qué color sean, son policías. Se cayó Belliboni.
+        </p>
+
+        <p>
+          Las cámaras lo siguen, Belliboni se acerca al cordón, gira 180 grados y se sienta. Se acerca Romina del Plá. Recorre la espalda de Belliboni de un lado al otro, se agacha y ubica el rostro a la misma altura que Belliboni que dice: nos sentamos precisamente para mostrar que era pacífica la protesta, sin embargo no sólo nos golpearon y nos arrastraron, a mí me golpearon varias patadas en la espalda y me dejaron sin aire. ¿Lograste identificar a los policías?-, pregunta el periodista. No, no hace falta, ya está.-, responde Belliboni. Las diputadas no interrumpen la entrevista. Se cayó Belliboni.
+        </p>
+
+        <p>
+          Escucho un Audio de GiGí el mismo día que me visita el milico: como que siento que los progres vehiculizaron el odio hacia los pobres a través de la policía. Es como medio loco pero siento que no pueden ser anti pobres pero sí está bien visto ser antiyuta. De última, no sé… ser anti todo, anti todo el aparato judicial. Ayer, por segunda vez, me escribe Maxi, el milico de la UTOI: ¿hacés algo?, me pregunta. Capaz más tarde, le miento. No tengo ganas de coger, pero igual le pregunto: ¿Andás caliente?. Sí, siempre, me responde. No volvemos a hablar. Se cayó Belliboni.
+        </p>
+
+        <p>
+          Aparece de perfil Miriam Bregman, está indignada. Belliboni se quedó sin aire, le explican, y ella se cubre la base del cuello con la mano, casi espantada. Belliboni se sube los pantalones y sonríe hacia ambos lados, parece contento. Romina del Plá se cruza de brazos. Belliboni les dice: hay que seguir peleando, los diputados adentro, los dirigentes sociales en la calle. Se mira el brazo buscando una herida. Romina y Miriam lo revisan. No tiene nada. Vuelven al recinto. La periodista cierra la nota y dice: Ahora aparentemente la situación está más calma, ¿no?
+        </p>
+
+      </div>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
 
