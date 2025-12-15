@@ -40,4 +40,23 @@ body {
 }
 
 /* -------- MOBILE -------- */
+@media (max-width: 768px) {
 
+  .contenido.textos {
+    padding: 100px 18px 60px;
+  }
+
+  .contenido.textos article {
+    max-width: 100%;
+  }
+
+  .titulo-texto {
+    font-size: 1.25rem;
+    margin-bottom: 1.5em;
+  }
+
+  .cuerpo-texto p {
+    line-height: 1.25;
+    margin-bottom: 1.3em;
+  }
+}
