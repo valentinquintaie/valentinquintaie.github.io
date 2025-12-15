@@ -1,65 +1,66 @@
-body {
-  background: red !important;
-}
-/* =========================================================
-   TEXTOS — versión compacta, densa, justificada
-   ========================================================= */
+/* ===============================
+   TEXTOS — sección completa
+   =============================== */
 
 /* ---------- CONTENEDOR GENERAL ---------- */
 
-main.textos {
-  max-width: 420px;        /* columna más angosta */
-  margin-left: auto;       /* empuja a la derecha */
-  margin-right: 40px;
-  padding-top: 120px;
+.textos {
+  /* empuja el texto a la derecha sin tocar menú ni índice */
+  margin-left: auto;
+  margin-right: 80px;
+
+  /* ancho literario: aprox media pantalla */
+  max-width: 52vw;
 }
 
 /* ---------- TÍTULO ---------- */
 
 .titulo-texto {
-  font-size: 36px;         /* MÁS chico en Mac */
-  font-weight: 800;
-  line-height: 1.05;
-  margin-bottom: 22px;
-  letter-spacing: -0.01em;
+  font-size: 34px;
+  font-weight: 700;            /* más periódico, más peso */
+  line-height: 1.1;
+  margin-bottom: 32px;
+
+  text-align: left;
 }
 
 /* ---------- CUERPO ---------- */
 
 .cuerpo-texto {
-  font-size: 15px;         /* ↓↓↓ clave: baja real en desktop */
-  line-height: 1.13;
-  font-weight: 400;
-  text-align: justify;     /* JUSTIFICADO */
+  font-size: 16px;             /* intermedio real */
+  line-height: 1.13;           /* literario, compacto */
+  text-align: justify;
+
+  max-width: 100%;
 }
 
 .cuerpo-texto p {
-  margin-bottom: 12px;     /* menos aire */
+  margin-bottom: 12px;         /* menos aire entre párrafos */
 }
 
-/* =========================================================
+/* ===============================
    MOBILE
-   ========================================================= */
+   =============================== */
 
 @media (max-width: 768px) {
 
-  main.textos {
-    max-width: 90vw;
+  .textos {
+    margin-right: 16px;
     margin-left: auto;
-    margin-right: 10px;
-    padding-top: 100px;
+
+    /* controla cantidad de palabras por línea */
+    max-width: 88vw;
   }
 
   .titulo-texto {
-    font-size: 30px;       /* más chico que antes */
-    line-height: 1.08;
-    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 24px;
   }
 
   .cuerpo-texto {
-    font-size: 17px;       /* legible pero no gigante */
+    font-size: 15.5px;         /* entra 10–15 palabras */
     line-height: 1.25;
-    text-align: justify;
   }
 
   .cuerpo-texto p {
