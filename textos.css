@@ -1,70 +1,96 @@
-/* ===============================
-   TEXTOS — sección completa
-   =============================== */
+/* ---------- TEXTOS (solo sección textos) ---------- */
 
-/* ---------- CONTENEDOR GENERAL ---------- */
-
+/* CONTENEDOR GENERAL */
 .textos {
-  /* empuja el texto a la derecha sin tocar menú ni índice */
-  margin-left: auto;
-  margin-right: 80px;
-
-  /* ancho literario: aprox media pantalla */
-  max-width: 52vw;
+  max-width: 720px;
+  margin-left: 260px; /* evita superposición con índice */
 }
 
-/* ---------- TÍTULO ---------- */
+/* ---------- ÍNDICE DE TEXTOS ---------- */
+
+.indice {
+  max-width: 200px;
+}
+
+.indice .grupo {
+  margin-bottom: 24px;
+}
+
+.grupo-titulo {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 10px;
+}
+
+.indice a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* guion editorial */
+.indice a::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  opacity: 0.6;
+}
+
+/* activo */
+.indice a.activo {
+  opacity: 1;
+}
+
+/* ---------- TÍTULO DEL TEXTO ---------- */
 
 .titulo-texto {
-  font-size: 34px;
-  font-weight: 700;            /* más periódico, más peso */
-  line-height: 1.1;
-  margin-bottom: 32px;
-
-  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 28px;
+  max-width: 720px;
 }
 
-/* ---------- CUERPO ---------- */
+/* ---------- CUERPO DEL TEXTO ---------- */
 
 .cuerpo-texto {
-  font-size: 16px;             /* intermedio real */
-  line-height: 1.13;           /* literario, compacto */
+  font-size: 16px;
+  line-height: 1.13;
+  max-width: 720px;
   text-align: justify;
-
-  max-width: 100%;
 }
 
 .cuerpo-texto p {
-  margin-bottom: 12px;         /* menos aire entre párrafos */
+  margin-bottom: 14px;
 }
 
-/* ===============================
-   MOBILE
-   =============================== */
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
 
   .textos {
-    margin-right: 16px;
-    margin-left: auto;
+    margin-left: 24px;
+    max-width: calc(100% - 48px);
+  }
 
-    /* controla cantidad de palabras por línea */
-    max-width: 88vw;
+  .indice {
+    font-size: 13px;
   }
 
   .titulo-texto {
-    font-size: 28px;
-    line-height: 1.15;
-    margin-bottom: 24px;
+    font-size: 24px;
+    margin-bottom: 22px;
   }
 
   .cuerpo-texto {
-    font-size: 15.5px;         /* entra 10–15 palabras */
+    font-size: 17px;
     line-height: 1.25;
   }
 
-  .cuerpo-texto p {
-    margin-bottom: 14px;
-  }
 }
 
