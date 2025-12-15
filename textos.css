@@ -1,65 +1,70 @@
-/* ================================
-   TEXTOS — OVERRIDE DEFINITIVO
-   ================================ */
+/* =========================================================
+   TEXTOS — sección textos (estilo literario / diario)
+   ========================================================= */
 
-/* CONTENEDOR DEL TEXTO (DESKTOP) */
-body main.contenido.textos {
-  max-width: 760px;
-  margin-left: auto !important;
-  margin-right: 48px !important;
-  padding-top: 120px;
+/* ---------- CONTENEDOR GENERAL ---------- */
+
+main.textos {
+  max-width: 480px;              /* columna literaria */
+  margin-left: auto;             /* empuja todo a la derecha */
+  margin-right: 48px;            /* aire contra el borde */
+  padding-top: 120px;            /* baja del menú fijo */
 }
 
-/* ================================
-   TÍTULO
-   ================================ */
+/* ---------- ARTÍCULO ---------- */
 
-body .titulo-texto {
-  font-size: 46px;
-  font-weight: 800; /* más periódico */
-  line-height: 1.15;
+main.textos article {
+  width: 100%;
+}
+
+/* ---------- TÍTULO ---------- */
+
+.titulo-texto {
+  font-size: 44px;
+  font-weight: 800;              /* más periódico */
+  line-height: 1.05;
   margin-bottom: 28px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
-/* ================================
-   CUERPO
-   ================================ */
+/* ---------- CUERPO DEL TEXTO ---------- */
 
-body .cuerpo-texto {
-  font-size: 21px;
-  line-height: 1.55;
+.cuerpo-texto {
+  font-size: 17px;               /* vuelve al tamaño original desktop */
+  line-height: 1.13;             /* MUY compacto */
+  font-weight: 400;
 }
 
-body .cuerpo-texto p {
-  margin-bottom: 14px;
+.cuerpo-texto p {
+  margin-bottom: 14px;           /* menos aire entre párrafos */
 }
 
-/* ================================
-   MOBILE — ACÁ ESTÁ LA CLAVE
-   ================================ */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-  body main.contenido.textos {
-    max-width: none !important;
-    margin-left: auto !important;   /* pegado a la derecha */
-    margin-right: 12px !important;
-    padding-top: 160px;
+  main.textos {
+    max-width: 92vw;             /* ocupa casi todo el ancho */
+    margin-left: auto;
+    margin-right: 12px;
+    padding-top: 100px;
   }
 
-  body .titulo-texto {
-    font-size: 36px !important;
-    line-height: 1.2;
+  .titulo-texto {
+    font-size: 36px;
+    line-height: 1.08;
     margin-bottom: 22px;
   }
 
-  body .cuerpo-texto {
-    font-size: 24px !important;     /* MUCHO MÁS GRANDE */
-    line-height: 1.65;
+  .cuerpo-texto {
+    font-size: 19px;             /* MÁS grande que antes */
+    line-height: 1.25;           /* compacto pero legible */
   }
 
-  body .cuerpo-texto p {
-    margin-bottom: 18px;
+  .cuerpo-texto p {
+    margin-bottom: 16px;
   }
 }
+
