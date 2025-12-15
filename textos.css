@@ -1,1 +1,53 @@
+/* ---------- TEXTOS (solo sección textos) ---------- */
+
+/* Contenedor general */
+.textos {
+  max-width: 720px;
+  margin-left: 0;
+}
+
+/* ---------- TÍTULO DEL TEXTO ---------- */
+
+.titulo-texto {
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 48px;
+  max-width: 720px;
+}
+
+/* No pisa el menú */
+@media (min-width: 769px) {
+  .titulo-texto {
+    margin-top: 0;
+  }
+}
+
+/* ---------- CUERPO DEL TEXTO ---------- */
+
+.cuerpo-texto {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 720px;
+}
+
+.cuerpo-texto p {
+  margin-bottom: 20px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .titulo-texto {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .cuerpo-texto {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+}
 
