@@ -1,42 +1,37 @@
 /* =========================================================
-   TEXTOS — sección textos (estilo literario / diario)
+   TEXTOS — versión compacta, densa, justificada
    ========================================================= */
 
 /* ---------- CONTENEDOR GENERAL ---------- */
 
 main.textos {
-  max-width: 480px;              /* columna literaria */
-  margin-left: auto;             /* empuja todo a la derecha */
-  margin-right: 48px;            /* aire contra el borde */
-  padding-top: 120px;            /* baja del menú fijo */
-}
-
-/* ---------- ARTÍCULO ---------- */
-
-main.textos article {
-  width: 100%;
+  max-width: 420px;        /* columna más angosta */
+  margin-left: auto;       /* empuja a la derecha */
+  margin-right: 40px;
+  padding-top: 120px;
 }
 
 /* ---------- TÍTULO ---------- */
 
 .titulo-texto {
-  font-size: 44px;
-  font-weight: 800;              /* más periódico */
+  font-size: 36px;         /* MÁS chico en Mac */
+  font-weight: 800;
   line-height: 1.05;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   letter-spacing: -0.01em;
 }
 
-/* ---------- CUERPO DEL TEXTO ---------- */
+/* ---------- CUERPO ---------- */
 
 .cuerpo-texto {
-  font-size: 17px;               /* vuelve al tamaño original desktop */
-  line-height: 1.13;             /* MUY compacto */
+  font-size: 15px;         /* ↓↓↓ clave: baja real en desktop */
+  line-height: 1.13;
   font-weight: 400;
+  text-align: justify;     /* JUSTIFICADO */
 }
 
 .cuerpo-texto p {
-  margin-bottom: 14px;           /* menos aire entre párrafos */
+  margin-bottom: 12px;     /* menos aire */
 }
 
 /* =========================================================
@@ -46,25 +41,26 @@ main.textos article {
 @media (max-width: 768px) {
 
   main.textos {
-    max-width: 92vw;             /* ocupa casi todo el ancho */
+    max-width: 90vw;
     margin-left: auto;
-    margin-right: 12px;
+    margin-right: 10px;
     padding-top: 100px;
   }
 
   .titulo-texto {
-    font-size: 36px;
+    font-size: 30px;       /* más chico que antes */
     line-height: 1.08;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .cuerpo-texto {
-    font-size: 19px;             /* MÁS grande que antes */
-    line-height: 1.25;           /* compacto pero legible */
+    font-size: 17px;       /* legible pero no gigante */
+    line-height: 1.25;
+    text-align: justify;
   }
 
   .cuerpo-texto p {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 }
 
