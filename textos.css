@@ -51,6 +51,14 @@ body {
   line-height: 1.35;
 }
 
+/* =========================
+   ÍNDICE: asegurar links en columna
+   ========================= */
+.indice .grupo a {
+  display: block;        /* fuerza que cada link ocupe toda la línea */
+  margin-bottom: 0.5em;  /* separación entre links */
+}
+
 /* -------- MOBILE -------- */
 @media (max-width: 768px) {
 
@@ -77,4 +85,5 @@ body {
     margin-bottom: 1.3em;
   }
 }
+
 
