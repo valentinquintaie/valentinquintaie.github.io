@@ -33,6 +33,18 @@ body {
   text-align: justify;
 }
 
+/* =========================
+   CITA INICIAL
+   ========================= */
+
+.cita-inicial {
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-bottom: 2.5em;
+  line-height: 1.3;
+}
+
 /* PÁRRAFOS */
 .cuerpo-texto p {
   margin: 0 0 1.4em 0;
@@ -55,8 +67,14 @@ body {
     margin-bottom: 1.5em;
   }
 
+  .cita-inicial {
+    font-size: 0.85rem;
+    margin-bottom: 2em;
+  }
+
   .cuerpo-texto p {
     line-height: 1.25;
     margin-bottom: 1.3em;
   }
 }
+
