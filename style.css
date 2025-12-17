@@ -1,156 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ---------- RESTOS ---------- */
+
+.restos {
+  padding-top: 40px;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  background: #e6e6e6;
-  color: #000;
+/* grilla */
+.grilla-restos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
 }
 
-/* ---------- MENÚ ---------- */
-
-.menu {
-  position: fixed;
-  top: 24px;
-  left: 24px;
-  display: flex;
-  gap: 22px;
-  font-size: 18px;
-  z-index: 10;
+/* bloque base */
+.resto {
+  aspect-ratio: 1 / 1;
+  background: #d0d0d0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #000;
+.resto:hover {
+  opacity: 0.7;
 }
 
-.menu a:hover {
-  opacity: 0.6;
+/* tipos (por ahora solo visual) */
+.archivo-imagen {
+  background: #cfcfcf;
 }
 
-/* ---------- INICIO (GUION) ---------- */
-
-.inicio {
-  margin-top: 80px;
-  padding-left: 24px;
+.archivo-video {
+  background: #bfbfbf;
 }
 
-.cursor {
-  font-size: 22px;
-  opacity: 0.8;
-  animation: blink 1.4s steps(1) infinite;
+.archivo-texto {
+  background: #d8d8d8;
 }
 
-@keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
-  51%, 100% {
-    opacity: 0;
-  }
+.archivo-pdf {
+  background: #bbbbbb;
 }
 
-/* ---------- ÍNDICE (PINTURAS / RESTOS) ---------- */
-
-.indice {
-  position: fixed;
-  top: 80px;
-  left: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.indice a {
-  text-decoration: none;
-  color: #000;
-  opacity: 0.6;
-}
-
-.indice a:hover {
-  opacity: 1;
-}
-
-/* ---------- CONTENIDO GENERAL ---------- */
-
-.contenido {
-  margin-left: 200px;
-  padding-top: 80px;
-  padding-right: 40px;
-}
-
-/* ---------- SERIES ---------- */
-
-.serie {
-  margin-bottom: 120px;
-}
-
-.titulo-serie {
-  text-align: center;
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 60px;
-}
-
-/* ---------- OBRAS ---------- */
-
-.obra {
-  margin-bottom: 80px;
-}
-
-.obra img {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
-}
-
-.ficha {
-  font-size: 12px;
-  opacity: 0.6;
-  text-align: right;
-  max-width: 800px;
-  margin: 6px auto 0 auto;
-}
-
-/* ---------- RESPONSIVE (ORIGINAL) ---------- */
-
+/* mobile */
 @media (max-width: 768px) {
-
-  /* MENÚ */
-  .menu {
-    font-size: 17px;
-    gap: 18px;
-  }
-
-  /* ÍNDICE */
-  .indice {
-    position: static;
-    margin-top: 80px;
-    margin-left: 24px;
-    font-size: 14px;
-  }
-
-  /* CONTENIDO */
-  .contenido {
-    margin-left: 0;
-    padding: 40px 16px 0 16px;
-  }
-
-  /* IMÁGENES */
-  .obra img {
-    max-width: 100%;
-  }
-
-  .ficha {
-    max-width: 100%;
+  .grilla-restos {
+    gap: 16px;
   }
 }
-
-
-
 
