@@ -45,6 +45,33 @@
   }
 }
 
+/* ---------- LIGHTBOX IMAGEN ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox .cerrar {
+  position: absolute;
+  inset: 0;
+  cursor: default;
+}
+
 
 
 
