@@ -1,0 +1,44 @@
+/* CONTENEDOR GENERAL */
+.restos {
+  padding: 80px 40px;
+}
+
+/* GRILLA */
+.grilla-restos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 24px;
+}
+
+/* RESTO */
+.resto {
+  cursor: pointer;
+}
+
+.resto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.resto:hover img {
+  filter: grayscale(0%);
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
