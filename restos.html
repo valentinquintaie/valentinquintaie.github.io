@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restos</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="restos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="restos.css">
 </head>
 
 <body>
 
-<nav class="menu">
-  <a href="pinturas.html">pinturas</a>
-  <a href="textos.html">textos</a>
-  <a href="restos.html">restos</a>
-</nav>
+  <nav class="menu">
+    <a href="pinturas.html">pinturas</a>
+    <a href="textos.html">textos</a>
+    <a href="restos.html">restos</a>
+  </nav>
 
-<main class="contenido restos">
+  <main class="contenido restos">
 
-  <section class="grilla-restos">
+    <div class="grilla-restos">
 
-    <!-- RESTO IMAGEN -->
-    <div class="resto archivo-imagen">
-      <img src="restos/img/img-flyer.jpg" alt="" />
-    </div>
-
-    <!-- RESTO VIDEO -->
-    <div class="resto archivo-video">
-      <video muted>
-        <source src="restos/videos/video-decadencia.mp4" type="video/mp4">
-      </video>
-    </div>
-
-    <!-- RESTO PDF -->
-    <div class="resto archivo-pdf">
-      <a href="restos/pdf/pdf-meme.pdf" target="_blank"></a>
-    </div>
-
-    <!-- RESTO TEXTO -->
-    <div class="resto archivo-texto">
-      <div class="texto-resto">
-        fragmento / nota / resto textual
+      <!-- IMAGEN -->
+      <div class="resto archivo-imagen">
+        <img src="restos/img/img-flyer.jpg" alt="">
       </div>
+
+      <!-- VIDEO -->
+      <div class="resto archivo-video">
+        <video
+          src="restos/videos/video-decadencia.mp4"
+          muted
+          autoplay
+          loop
+          playsinline>
+        </video>
+      </div>
+
+      <!-- PDF (placeholder visual) -->
+      <a class="resto archivo-pdf" href="restos/pdf/pdf-meme.pdf" target="_blank">
+        <img src="restos/img/img-flyer.jpg" alt="">
+      </a>
+
     </div>
 
-  </section>
-
-</main>
+  </main>
 
 </body>
 </html>
