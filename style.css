@@ -1,49 +1,144 @@
-/* ---------- RESTOS ---------- */
+/* ---------- RESET ---------- */
 
-.restos {
-  padding-top: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* grilla */
-.grilla-restos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 24px;
+/* ---------- BASE ---------- */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #e6e6e6;
+  color: #000;
 }
 
-/* bloque base */
-.resto {
-  aspect-ratio: 1 / 1;
-  background: #d0d0d0;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
+/* ---------- MENÚ ---------- */
+
+.menu {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  gap: 22px;
+  font-size: 18px;
+  z-index: 10;
 }
 
-.resto:hover {
-  opacity: 0.7;
+.menu a {
+  text-decoration: none;
+  color: #000;
 }
 
-/* tipos (por ahora solo visual) */
-.archivo-imagen {
-  background: #cfcfcf;
+.menu a:hover {
+  opacity: 0.6;
 }
 
-.archivo-video {
-  background: #bfbfbf;
+/* ---------- INICIO ---------- */
+
+.inicio {
+  margin-top: 80px;
+  padding-left: 24px;
 }
 
-.archivo-texto {
-  background: #d8d8d8;
+.cursor {
+  font-size: 22px;
+  opacity: 0.8;
+  animation: blink 1.4s steps(1) infinite;
 }
 
-.archivo-pdf {
-  background: #bbbbbb;
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
-/* mobile */
+/* ---------- ÍNDICE ---------- */
+
+.indice {
+  position: fixed;
+  top: 80px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.indice a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+}
+
+.indice a:hover {
+  opacity: 1;
+}
+
+/* ---------- CONTENIDO ---------- */
+
+.contenido {
+  margin-left: 200px;
+  padding-top: 80px;
+  padding-right: 40px;
+}
+
+/* ---------- PINTURAS ---------- */
+
+.serie {
+  margin-bottom: 120px;
+}
+
+.titulo-serie {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+
+.obra {
+  margin-bottom: 80px;
+}
+
+.obra img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.ficha {
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: right;
+  max-width: 800px;
+  margin: 6px auto 0 auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
 @media (max-width: 768px) {
-  .grilla-restos {
-    gap: 16px;
+
+  .menu {
+    font-size: 17px;
+    gap: 18px;
+  }
+
+  .indice {
+    position: static;
+    margin-top: 80px;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+
+  .contenido {
+    margin-left: 0;
+    padding: 40px 16px 0 16px;
+  }
+
+  .obra img,
+  .ficha {
+    max-width: 100%;
   }
 }
 
