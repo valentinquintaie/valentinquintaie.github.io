@@ -1,45 +1,25 @@
-/* =========================
-   RESTOS – AISLADO
-========================= */
-
-.restos {
-  padding: 40px;
+/* CONTENEDOR GENERAL */
+.contenido.restos {
+  padding: 20px;
 }
 
-/* GRILLA: 4 columnas SIEMPRE */
-.restos .grilla-restos {
+/* GRILLA */
+.grilla-restos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 12px;
 }
 
-/* CADA RESTO */
-.restos .resto {
+/* ITEM */
+.resto {
   cursor: pointer;
 }
 
 /* IMÁGENES */
-.restos .resto img {
+.resto img {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
-/* VIDEOS */
-.restos .resto video {
-  width: 100%;
-  display: block;
-}
-
-/* TEXTOS */
-.restos .resto.texto {
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-/* MOBILE: NO CAMBIA COLUMNAS */
-@media (max-width: 768px) {
-  .restos {
-    padding: 20px;
-  }
-}
