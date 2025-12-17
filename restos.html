@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restos</title>
 
-  <!-- estilos globales -->
-  <link rel="stylesheet" href="style.css">
-  <!-- estilos específicos de restos -->
-  <link rel="stylesheet" href="restos.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="restos.css" />
 </head>
 
 <body>
 
-  <!-- MENÚ -->
-  <nav class="menu">
-    <a href="pinturas.html">pinturas</a>
-    <a href="textos.html">textos</a>
-    <a href="restos.html">restos</a>
-  </nav>
+<nav class="menu">
+  <a href="pinturas.html">pinturas</a>
+  <a href="textos.html">textos</a>
+  <a href="restos.html">restos</a>
+</nav>
 
-  <!-- ÍNDICE (vacío por ahora, como pinturas) -->
-  <aside class="indice">
-    <span class="grupo-titulo">Restos</span>
-  </aside>
+<main class="contenido restos">
 
-  <!-- CONTENIDO -->
-  <main class="contenido restos">
+  <section class="grilla-restos">
 
-    <section class="grilla-restos">
+    <!-- RESTO IMAGEN -->
+    <div class="resto archivo-imagen">
+      <img src="restos/img/img-flyer.jpg" alt="" />
+    </div>
 
-      <!-- IMAGEN -->
-      <div class="resto archivo-imagen"></div>
+    <!-- RESTO VIDEO -->
+    <div class="resto archivo-video">
+      <video muted>
+        <source src="restos/videos/video-decadencia.mp4" type="video/mp4">
+      </video>
+    </div>
 
-      <!-- VIDEO -->
-      <div class="resto archivo-video"></div>
+    <!-- RESTO PDF -->
+    <div class="resto archivo-pdf">
+      <a href="restos/pdf/pdf-meme.pdf" target="_blank"></a>
+    </div>
 
-      <!-- TEXTO -->
-      <div class="resto archivo-texto"></div>
+    <!-- RESTO TEXTO -->
+    <div class="resto archivo-texto">
+      <div class="texto-resto">
+        fragmento / nota / resto textual
+      </div>
+    </div>
 
-      <!-- PDF -->
-      <div class="resto archivo-pdf"></div>
+  </section>
 
-      <!-- duplicados para testear grilla -->
-      <div class="resto archivo-imagen"></div>
-      <div class="resto archivo-video"></div>
-      <div class="resto archivo-texto"></div>
-      <div class="resto archivo-pdf"></div>
-
-    </section>
-
-  </main>
+</main>
 
 </body>
 </html>
+
