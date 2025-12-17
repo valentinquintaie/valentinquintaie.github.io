@@ -4,19 +4,24 @@
   padding: 80px 24px 24px 24px;
 }
 
-/* ocultar índice SOLO en restos */
-.restos .indice {
+/* ASEGURAR QUE NO HAYA NINGÚN BLOQUE LATERAL */
+.restos aside,
+.restos nav + *,
+.restos .indice,
+.restos .panel,
+.restos .metadata,
+.restos .etiquetas {
   display: none;
 }
 
-/* grilla fija */
+/* GRILLA: 4 COLUMNAS SIEMPRE */
 .grilla-restos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* bloque */
+/* ITEM */
 .resto {
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -24,7 +29,7 @@
   cursor: pointer;
 }
 
-/* imagen y video */
+/* CONTENIDO */
 .resto img,
 .resto video {
   width: 100%;
@@ -33,12 +38,13 @@
   display: block;
 }
 
-/* mobile: SIGUEN siendo 4 columnas */
+/* MOBILE: SIGUEN 4 */
 @media (max-width: 768px) {
   .grilla-restos {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
 }
+
 
 
