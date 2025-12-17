@@ -2,44 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>restos</title>
 
+  <!-- CSS base (NO se toca) -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- CSS exclusivo de restos -->
   <link rel="stylesheet" href="restos.css">
 </head>
 
 <body>
 
-  <!-- MENÚ -->
-  <nav class="menu">
-    <a href="pinturas.html">pinturas</a>
-    <a href="textos.html">textos</a>
-    <a href="restos.html">restos</a>
-  </nav>
+<nav class="menu">
+  <a href="pinturas.html">pinturas</a>
+  <a href="textos.html">textos</a>
+  <a href="restos.html">restos</a>
+</nav>
 
-  <!-- CONTENIDO -->
-  <main class="contenido restos">
+<main class="contenido restos">
 
-    <section class="grilla-restos">
+  <section class="grilla-restos">
 
-      <!-- archivo -->
-      <div class="resto archivo-imagen"></div>
+    <!-- IMAGEN -->
+    <div class="resto imagen">
+      <img src="img/resto1.jpg" alt="">
+    </div>
 
-      <div class="resto archivo-video"></div>
+    <!-- VIDEO -->
+    <div class="resto video">
+      <video muted>
+        <source src="video/resto1.mp4" type="video/mp4">
+      </video>
+    </div>
 
-      <div class="resto archivo-texto"></div>
+    <!-- TEXTO -->
+    <div class="resto texto">
+      <p>
+        Fragmento. Nota suelta. Resto de algo que no cerró.
+      </p>
+    </div>
 
-      <div class="resto archivo-imagen"></div>
+  </section>
 
-      <div class="resto archivo-pdf"></div>
+</main>
 
-      <div class="resto archivo-video"></div>
-
-    </section>
-
-  </main>
-
+<script src="restos.js"></script>
 </body>
 </html>
 
