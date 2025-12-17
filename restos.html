@@ -2,40 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Restos</title>
 
+  <!-- estilos globales -->
   <link rel="stylesheet" href="style.css">
+  <!-- estilos específicos de restos -->
   <link rel="stylesheet" href="restos.css">
 </head>
 
 <body>
 
+  <!-- MENÚ -->
   <nav class="menu">
     <a href="pinturas.html">pinturas</a>
     <a href="textos.html">textos</a>
     <a href="restos.html">restos</a>
   </nav>
 
+  <!-- ÍNDICE (vacío por ahora, como pinturas) -->
+  <aside class="indice">
+    <span class="grupo-titulo">Restos</span>
+  </aside>
+
+  <!-- CONTENIDO -->
   <main class="contenido restos">
 
     <section class="grilla-restos">
 
-      <!-- resto 1 -->
-      <div class="resto imagen">
-        <img src="img/fanfiction.jpg" alt="">
-      </div>
+      <!-- IMAGEN -->
+      <div class="resto archivo-imagen"></div>
 
-      <!-- resto 2 -->
-      <div class="resto imagen">
-        <img src="img/pinturas/serie-1/obra1.jpg" alt="">
-      </div>
+      <!-- VIDEO -->
+      <div class="resto archivo-video"></div>
 
-      <!-- resto 3 -->
-      <div class="resto imagen">
-        <img src="img/pinturas/serie-1/obra2.jpg" alt="">
-      </div>
+      <!-- TEXTO -->
+      <div class="resto archivo-texto"></div>
+
+      <!-- PDF -->
+      <div class="resto archivo-pdf"></div>
+
+      <!-- duplicados para testear grilla -->
+      <div class="resto archivo-imagen"></div>
+      <div class="resto archivo-video"></div>
+      <div class="resto archivo-texto"></div>
+      <div class="resto archivo-pdf"></div>
 
     </section>
 
