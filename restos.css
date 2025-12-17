@@ -4,12 +4,9 @@
   padding: 80px 24px 24px 24px;
 }
 
-/* ASEGURAR QUE NO HAYA NINGÚN BLOQUE LATERAL */
+/* NO ÍNDICES, NO PANELES */
 .restos aside,
-.restos .indice,
-.restos .panel,
-.restos .metadata,
-.restos .etiquetas {
+.restos .indice {
   display: none;
 }
 
@@ -25,8 +22,8 @@
 
 .resto {
   aspect-ratio: 1 / 1;
-  overflow: hidden;
   background: #d0d0d0;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -39,33 +36,7 @@
   display: block;
 }
 
-/* ---------- LIGHTBOX IMAGEN ---------- */
-
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.lightbox img {
-  max-width: 90vw;
-  max-height: 90vh;
-}
-
-.lightbox:target {
-  display: flex;
-}
-
-.lightbox .cerrar {
-  position: absolute;
-  inset: 0;
-}
-
-/* ---------- MOBILE ---------- */
+/* ---------- MOBILE (SIGUEN 4 COLUMNAS) ---------- */
 
 @media (max-width: 768px) {
   .grilla-restos {
@@ -73,6 +44,7 @@
     gap: 12px;
   }
 }
+
 
 
 
