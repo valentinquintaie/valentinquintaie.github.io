@@ -1,44 +1,82 @@
-/* CONTENEDOR GENERAL */
+/* ===============================
+   RESTOS – grilla de archivos
+   =============================== */
+
+/* contenedor principal */
 .restos {
-  padding: 80px 40px;
+  margin-left: 200px;
+  padding-top: 80px;
+  padding-right: 40px;
 }
 
-/* GRILLA */
+/* ===============================
+   GRILLA (4 columnas SIEMPRE)
+   =============================== */
+
 .grilla-restos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
-/* RESTO */
+/* cada item */
 .resto {
+  aspect-ratio: 1 / 1;
+  background: #dcdcdc;
   cursor: pointer;
+  position: relative;
 }
 
-.resto img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.resto:hover img {
-  filter: grayscale(0%);
-}
-
-/* OVERLAY */
-.overlay {
-  position: fixed;
+/* preview genérico */
+.resto::after {
+  content: "";
+  position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.92);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
+  background-size: cover;
+  background-position: center;
 }
 
-.overlay img {
-  max-width: 90%;
-  max-height: 90%;
+/* ===============================
+   ÍNDICE (forzado al estilo general)
+   =============================== */
+
+.indice a {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.indice a:hover {
+  opacity: 1;
+}
+
+.indice a:visited {
+  color: #000;
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 768px) {
+
+  .restos {
+    margin-left: 24px;
+    padding-top: 160px;
+    padding-right: 24px;
+  }
+
+  /* 🔒 sigue siendo 4 columnas */
+  .grilla-restos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  /* índice consistente */
+  .indice a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+  }
 }
