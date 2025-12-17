@@ -1,16 +1,5 @@
-const restos = document.querySelectorAll('.resto');
-const overlay = document.getElementById('overlay');
-const overlayImg = document.getElementById('overlay-img');
-
-restos.forEach(resto => {
+document.querySelectorAll('.restos .resto').forEach(resto => {
   resto.addEventListener('click', () => {
-    const src = resto.dataset.src;
-    overlayImg.src = src;
-    overlay.style.display = 'flex';
+    resto.classList.toggle('abierto');
   });
-});
-
-overlay.addEventListener('click', () => {
-  overlay.style.display = 'none';
-  overlayImg.src = '';
 });
