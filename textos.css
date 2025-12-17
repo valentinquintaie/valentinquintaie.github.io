@@ -52,20 +52,24 @@ body {
 }
 
 /* =========================
-   ÍNDICE: asegurar links en columna y separar grupos
+   ÍNDICE
    ========================= */
+
+/* Todos los links en columna */
 .indice .grupo a {
-  display: block;        /* fuerza que cada link ocupe toda la línea */
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Fanfiction: links compactos */
+/* Fanfiction: links uno abajo del otro, sin separación */
 .indice .grupo.fanfiction a {
-  margin-bottom: 0.3em;  /* separación mínima entre títulos de Fanfiction */
+  margin-bottom: 0; 
 }
 
-/* Textos sueltos: espacio extra entre ellos */
+/* Textos sueltos: espacio medio entre ellos */
 .indice .grupo.suelto a {
-  margin-bottom: 1em;    /* espacio mayor para textos sueltos */
+  margin-bottom: 0.8em; /* menos de antes, suficiente para ver separación */
 }
 
 /* -------- MOBILE -------- */
@@ -94,5 +98,6 @@ body {
     margin-bottom: 1.3em;
   }
 }
+
 
 
