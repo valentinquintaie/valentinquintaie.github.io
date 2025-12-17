@@ -1,82 +1,45 @@
-/* ===============================
-   RESTOS – grilla de archivos
-   =============================== */
+/* =========================
+   RESTOS – AISLADO
+========================= */
 
-/* contenedor principal */
 .restos {
-  margin-left: 200px;
-  padding-top: 80px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
-/* ===============================
-   GRILLA (4 columnas SIEMPRE)
-   =============================== */
-
-.grilla-restos {
+/* GRILLA: 4 columnas SIEMPRE */
+.restos .grilla-restos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
-/* cada item */
-.resto {
-  aspect-ratio: 1 / 1;
-  background: #dcdcdc;
+/* CADA RESTO */
+.restos .resto {
   cursor: pointer;
-  position: relative;
 }
 
-/* preview genérico */
-.resto::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
+/* IMÁGENES */
+.restos .resto img {
+  width: 100%;
+  display: block;
 }
 
-/* ===============================
-   ÍNDICE (forzado al estilo general)
-   =============================== */
-
-.indice a {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #000;
-  text-decoration: none;
-  opacity: 0.6;
+/* VIDEOS */
+.restos .resto video {
+  width: 100%;
+  display: block;
 }
 
-.indice a:hover {
-  opacity: 1;
+/* TEXTOS */
+.restos .resto.texto {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
 }
 
-.indice a:visited {
-  color: #000;
-}
-
-/* ===============================
-   MOBILE
-   =============================== */
-
+/* MOBILE: NO CAMBIA COLUMNAS */
 @media (max-width: 768px) {
-
   .restos {
-    margin-left: 24px;
-    padding-top: 160px;
-    padding-right: 24px;
-  }
-
-  /* 🔒 sigue siendo 4 columnas */
-  .grilla-restos {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-
-  /* índice consistente */
-  .indice a {
-    font-size: 13px;
-    text-decoration: none;
-    color: #000;
+    padding: 20px;
   }
 }
