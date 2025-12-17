@@ -1,25 +1,44 @@
-/* CONTENEDOR GENERAL */
+/* ---------- RESTOS ---------- */
+
 .contenido.restos {
-  padding: 20px;
+  padding: 80px 24px 24px 24px;
 }
 
-/* GRILLA */
+/* ocultar índice SOLO en restos */
+.restos .indice {
+  display: none;
+}
+
+/* grilla fija */
 .grilla-restos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
-/* ITEM */
+/* bloque */
 .resto {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #d0d0d0;
   cursor: pointer;
 }
 
-/* IMÁGENES */
-.resto img {
+/* imagen y video */
+.resto img,
+.resto video {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
+
+/* mobile: SIGUEN siendo 4 columnas */
+@media (max-width: 768px) {
+  .grilla-restos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+
 
