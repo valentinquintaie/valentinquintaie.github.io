@@ -6,7 +6,6 @@
 
 /* ASEGURAR QUE NO HAYA NINGÚN BLOQUE LATERAL */
 .restos aside,
-.restos nav + *,
 .restos .indice,
 .restos .panel,
 .restos .metadata,
@@ -14,14 +13,16 @@
   display: none;
 }
 
-/* GRILLA: 4 COLUMNAS SIEMPRE */
+/* ---------- GRILLA ---------- */
+
 .grilla-restos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* ITEM */
+/* ---------- ITEM ---------- */
+
 .resto {
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -38,7 +39,34 @@
   display: block;
 }
 
-/* MOBILE: SIGUEN 4 */
+/* ---------- LIGHTBOX IMAGEN ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox .cerrar {
+  position: absolute;
+  inset: 0;
+}
+
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 768px) {
   .grilla-restos {
     grid-template-columns: repeat(4, 1fr);
