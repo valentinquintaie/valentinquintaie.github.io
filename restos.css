@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-/* MINIATURAS */
+/* CONTENIDO */
 .resto img,
 .resto video {
   width: 100%;
@@ -45,7 +45,7 @@
   }
 }
 
-/* ---------- LIGHTBOX IMAGEN (solo si seguís usando lightbox) ---------- */
+/* ---------- LIGHTBOX IMAGEN ---------- */
 
 .lightbox {
   position: fixed;
@@ -72,7 +72,7 @@
   cursor: default;
 }
 
-/* ---------- CONTENEDORES GRANDES ABAJO ---------- */
+/* ---------- RESTOS GRANDES ---------- */
 
 .resto-grande {
   margin-top: 60px;
@@ -80,12 +80,29 @@
 }
 
 .resto-grande img,
-.resto-grande video,
-.resto-grande iframe {
+.resto-grande video {
   max-width: 90%;
   height: auto;
   display: block;
   margin: 0 auto 40px auto;
+}
+
+/* ---------- YOUTUBE RESPONSIVE ---------- */
+.resto-grande.youtube {
+  position: relative;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto 40px auto;
+  padding-top: 56.25%; /* 16:9 ratio */
+}
+
+.resto-grande.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 
