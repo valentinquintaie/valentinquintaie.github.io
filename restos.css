@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-/* CONTENIDO MINIATURA */
+/* MINIATURAS */
 .resto img,
 .resto video {
   width: 100%;
@@ -45,7 +45,7 @@
   }
 }
 
-/* ---------- LIGHTBOX IMAGEN ---------- */
+/* ---------- LIGHTBOX IMAGEN (solo si seguís usando lightbox) ---------- */
 
 .lightbox {
   position: fixed;
@@ -72,7 +72,7 @@
   cursor: default;
 }
 
-/* ---------- CONTENEDORES GRANDES (IMAGEN, VIDEO, YOUTUBE) ---------- */
+/* ---------- CONTENEDORES GRANDES ABAJO ---------- */
 
 .resto-grande {
   margin-top: 60px;
