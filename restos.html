@@ -11,6 +11,7 @@
 
 <body>
 
+  <!-- MENÚ -->
   <nav class="menu">
     <a href="pinturas.html">pinturas</a>
     <a href="textos.html">textos</a>
@@ -19,32 +20,48 @@
 
   <main class="contenido restos">
 
-    <!-- GRILLA -->
+    <!-- =====================
+         GRILLA SUPERIOR
+         ===================== -->
     <div class="grilla-restos">
 
       <!-- IMAGEN -->
-      <div class="resto archivo-imagen" data-target="img-1">
+      <a class="resto"
+         href="#img-1">
         <img src="restos/img/img-flyer.jpg" alt="">
-      </div>
+      </a>
 
       <!-- VIDEO LOCAL -->
-      <div class="resto archivo-video" data-target="video-1">
-        <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline></video>
-      </div>
+      <a class="resto"
+         href="#vid-1">
+        <video
+          src="restos/videos/video-decadencia.mp4"
+          muted
+          autoplay
+          loop
+          playsinline>
+        </video>
+      </a>
 
-      <!-- DOCX -->
-      <div class="resto archivo-doc" data-target="doc-1">
+      <!-- DOC -->
+      <a class="resto"
+         href="restos/doc/ponencia-doc.docx">
         <img src="restos/img/img-flyer.jpg" alt="">
-      </div>
+      </a>
 
-      <!-- MINIATURA YOUTUBE -->
-      <div class="resto archivo-youtube" data-target="yt-1">
-        <img src="restos/img/thumb-youtube.jpg" alt="YouTube Video">
-      </div>
+      <!-- YOUTUBE (miniatura) -->
+      <a class="resto"
+         href="#yt-1">
+        <img
+          src="https://img.youtube.com/vi/D_FuqCposKk/hqdefault.jpg"
+          alt="YouTube video">
+      </a>
 
     </div>
 
-    <!-- CONTENIDO GRANDE ABAJO -->
+    <!-- =====================
+         CONTENIDO GRANDE
+         ===================== -->
 
     <!-- IMAGEN GRANDE -->
     <div id="img-1" class="resto-grande">
@@ -52,44 +69,25 @@
     </div>
 
     <!-- VIDEO LOCAL GRANDE -->
-    <div id="video-1" class="resto-grande">
-      <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline controls></video>
-    </div>
-
-    <!-- DOCX GRANDE -->
-    <div id="doc-1" class="resto-grande">
-      <a href="restos/doc/ponencia-doc.docx" target="_blank">Descargar / Abrir DOCX</a>
+    <div id="vid-1" class="resto-grande">
+      <video
+        src="restos/videos/video-decadencia.mp4"
+        controls>
+      </video>
     </div>
 
     <!-- YOUTUBE GRANDE -->
-    <div id="yt-1" class="resto-grande youtube">
-      <iframe 
-        src="https://www.youtube.com/embed/D_FuqCposKk" 
-        title="YouTube video" 
-        allowfullscreen>
-      </iframe>
+    <div id="yt-1" class="resto-grande">
+      <div class="youtube-container">
+        <iframe
+          src="https://www.youtube.com/embed/D_FuqCposKk"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
   </main>
 
-  <!-- JS -->
-  <script>
-    // Función para scroll al contenido grande
-    document.querySelectorAll('.restos .resto').forEach(resto => {
-      resto.addEventListener('click', () => {
-        const targetId = resto.dataset.target;
-        const target = document.getElementById(targetId);
-        if(target) {
-          target.scrollIntoView({behavior: 'smooth'});
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
-
-</body>
-</html>
-
-
