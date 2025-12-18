@@ -7,28 +7,6 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="restos.css">
-
-  <style>
-    /* Scroll suave para toda la página */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* contenedores grandes al final */
-    .resto-grande {
-      margin: 40px 0;
-      max-width: 90vw;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .resto-grande img,
-    .resto-grande video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
 </head>
 
 <body>
@@ -36,62 +14,68 @@
   <nav class="menu">
     <a href="pinturas.html">pinturas</a>
     <a href="textos.html">textos</a>
-    <a href="restos.html" class="activo">restos</a>
+    <a href="restos.html">restos</a>
   </nav>
 
   <main class="contenido restos">
 
+    <!-- GRILLA DE MINIATURAS -->
     <div class="grilla-restos">
 
-      <!-- MINIATURAS -->
+      <!-- IMAGEN MINIATURA -->
       <a class="resto archivo-imagen" href="#img-1">
         <img src="restos/img/img-flyer.jpg" alt="">
       </a>
 
-      <div class="resto archivo-video">
-        <video src="restos/videos/video-decadencia.mp4" autoplay muted loop playsinline></video>
-      </div>
+      <!-- VIDEO MINIATURA -->
+      <a class="resto archivo-video" href="#video-1">
+        <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline></video>
+      </a>
 
+      <!-- DOCX MINIATURA -->
       <a class="resto archivo-doc" href="#doc-1">
         <img src="restos/img/img-flyer.jpg" alt="">
       </a>
 
+      <!-- PDF MINIATURA -->
       <a class="resto archivo-pdf" href="#pdf-1">
         <img src="restos/img/img-flyer.jpg" alt="">
       </a>
 
     </div>
 
-    <!-- ARCHIVOS GRANDES AL FINAL -->
+    <!-- SECCIÓN DE ARCHIVOS GRANDES -->
+    <div class="restos-grandes">
 
-    <!-- IMAGEN GRANDE -->
-    <div id="img-1" class="resto-grande">
-      <img src="restos/img/img-flyer.jpg" alt="">
-    </div>
-
-    <!-- VIDEO GRANDE -->
-    <div id="video-1" class="resto-grande">
-      <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline controls></video>
-    </div>
-
-    <!-- DOCX -->
-    <div id="doc-1" class="resto-grande">
-      <a href="restos/doc/ponencia-doc.docx" target="_blank">
+      <!-- IMAGEN GRANDE -->
+      <div id="img-1" class="resto-grande">
         <img src="restos/img/img-flyer.jpg" alt="">
-      </a>
-    </div>
+      </div>
 
-    <!-- PDF -->
-    <div id="pdf-1" class="resto-grande">
-      <a href="restos/pdf/pdf-meme.pdf" target="_blank">
-        <img src="restos/img/img-flyer.jpg" alt="">
-      </a>
+      <!-- VIDEO GRANDE -->
+      <div id="video-1" class="resto-grande">
+        <video src="restos/videos/video-decadencia.mp4" autoplay muted loop playsinline controls></video>
+      </div>
+
+      <!-- DOCX GRANDE (puede abrirse en otra pestaña) -->
+      <div id="doc-1" class="resto-grande">
+        <a href="restos/doc/ponencia-doc.docx" target="_blank">
+          <img src="restos/img/img-flyer.jpg" alt="">
+        </a>
+      </div>
+
+      <!-- PDF GRANDE -->
+      <div id="pdf-1" class="resto-grande">
+        <a href="restos/pdf/pdf-meme.pdf" target="_blank">
+          <img src="restos/img/img-flyer.jpg" alt="">
+        </a>
+      </div>
+
     </div>
 
   </main>
 
 </body>
 </html>
-
 
 
