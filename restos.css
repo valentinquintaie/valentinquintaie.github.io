@@ -45,7 +45,7 @@
   }
 }
 
-/* ---------- LIGHTBOX IMAGEN ---------- */
+/* ---------- LIGHTBOX IMAGEN / ARCHIVOS ---------- */
 
 .lightbox {
   position: fixed;
@@ -57,7 +57,8 @@
   z-index: 999;
 }
 
-.lightbox img {
+.lightbox img,
+.lightbox video {
   max-width: 90vw;
   max-height: 90vh;
 }
@@ -72,13 +73,14 @@
   cursor: default;
 }
 
-/* ---------- RESTOS GRANDES ---------- */
+/* ---------- CONTENEDORES GRANDES DE ARCHIVOS ---------- */
 
 .resto-grande {
   margin-top: 60px;
   text-align: center;
 }
 
+/* IMÁGENES Y VIDEOS LOCALES */
 .resto-grande img,
 .resto-grande video {
   max-width: 90%;
@@ -87,8 +89,8 @@
   margin: 0 auto 40px auto;
 }
 
-/* ---------- YOUTUBE RESPONSIVE ---------- */
-.resto-grande.youtube {
+/* ---------- YOUTUBE 16:9 RESPONSIVE ---------- */
+.resto-grande .youtube-container {
   position: relative;
   width: 90%;
   max-width: 960px;
@@ -96,7 +98,7 @@
   padding-top: 56.25%; /* 16:9 ratio */
 }
 
-.resto-grande.youtube iframe {
+.resto-grande .youtube-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -104,7 +106,6 @@
   height: 100%;
   border: 0;
 }
-
 
 
 
