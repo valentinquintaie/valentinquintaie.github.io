@@ -19,7 +19,6 @@
 
   <main class="contenido restos">
 
-    <!-- GRILLA DE MINIATURAS -->
     <div class="grilla-restos">
 
       <!-- IMAGEN MINIATURA -->
@@ -29,7 +28,13 @@
 
       <!-- VIDEO MINIATURA -->
       <a class="resto archivo-video" href="#video-1">
-        <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline></video>
+        <video
+          src="restos/videos/video-decadencia.mp4"
+          muted
+          autoplay
+          loop
+          playsinline>
+        </video>
       </a>
 
       <!-- DOCX MINIATURA -->
@@ -37,45 +42,48 @@
         <img src="restos/img/img-flyer.jpg" alt="">
       </a>
 
-      <!-- PDF MINIATURA -->
-      <a class="resto archivo-pdf" href="#pdf-1">
-        <img src="restos/img/img-flyer.jpg" alt="">
-      </a>
-
     </div>
 
-    <!-- SECCIÓN DE ARCHIVOS GRANDES -->
-    <div class="restos-grandes">
+    <!-- CONTENIDO GRANDE -->
+    <div id="img-1" class="resto-grande">
+      <img src="restos/img/img-flyer.jpg" alt="">
+    </div>
 
-      <!-- IMAGEN GRANDE -->
-      <div id="img-1" class="resto-grande">
+    <div id="video-1" class="resto-grande">
+      <video
+        src="restos/videos/video-decadencia.mp4"
+        muted
+        autoplay
+        loop
+        playsinline
+        controls>
+      </video>
+    </div>
+
+    <div id="doc-1" class="resto-grande">
+      <a href="restos/doc/ponencia-doc.docx" target="_blank">
         <img src="restos/img/img-flyer.jpg" alt="">
-      </div>
-
-      <!-- VIDEO GRANDE -->
-      <div id="video-1" class="resto-grande">
-        <video src="restos/videos/video-decadencia.mp4" autoplay muted loop playsinline controls></video>
-      </div>
-
-      <!-- DOCX GRANDE (puede abrirse en otra pestaña) -->
-      <div id="doc-1" class="resto-grande">
-        <a href="restos/doc/ponencia-doc.docx" target="_blank">
-          <img src="restos/img/img-flyer.jpg" alt="">
-        </a>
-      </div>
-
-      <!-- PDF GRANDE -->
-      <div id="pdf-1" class="resto-grande">
-        <a href="restos/pdf/pdf-meme.pdf" target="_blank">
-          <img src="restos/img/img-flyer.jpg" alt="">
-        </a>
-      </div>
-
+      </a>
     </div>
 
   </main>
 
+  <script>
+    // Scroll suave al clickear miniatura
+    document.querySelectorAll('.grilla-restos .resto').forEach(mini => {
+      mini.addEventListener('click', function(e) {
+        e.preventDefault(); // evitar que abra otra pestaña
+
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
-
 
