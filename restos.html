@@ -14,37 +14,37 @@
   <nav class="menu">
     <a href="pinturas.html">pinturas</a>
     <a href="textos.html">textos</a>
-    <a href="restos.html" class="activo">restos</a>
+    <a href="restos.html">restos</a>
   </nav>
 
   <main class="contenido restos">
 
-    <!-- GRILLA DE MINIATURAS -->
+    <!-- GRILLA -->
     <div class="grilla-restos">
 
       <!-- IMAGEN -->
-      <div class="resto miniatura" data-target="img-1">
+      <div class="resto archivo-imagen" data-target="img-1">
         <img src="restos/img/img-flyer.jpg" alt="">
       </div>
 
       <!-- VIDEO LOCAL -->
-      <div class="resto miniatura" data-target="video-1">
+      <div class="resto archivo-video" data-target="video-1">
         <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline></video>
       </div>
 
       <!-- DOCX -->
-      <div class="resto miniatura" data-target="doc-1">
+      <div class="resto archivo-doc" data-target="doc-1">
         <img src="restos/img/img-flyer.jpg" alt="">
       </div>
 
-      <!-- YOUTUBE -->
-      <div class="resto miniatura" data-target="youtube-1">
-        <img src="https://img.youtube.com/vi/D_FuqCposKk/hqdefault.jpg" alt="Miniatura YouTube">
+      <!-- MINIATURA YOUTUBE -->
+      <div class="resto archivo-youtube" data-target="yt-1">
+        <img src="restos/img/thumb-youtube.jpg" alt="YouTube Video">
       </div>
 
     </div>
 
-    <!-- CONTENEDORES GRANDES ABAJO -->
+    <!-- CONTENIDO GRANDE ABAJO -->
 
     <!-- IMAGEN GRANDE -->
     <div id="img-1" class="resto-grande">
@@ -58,33 +58,36 @@
 
     <!-- DOCX GRANDE -->
     <div id="doc-1" class="resto-grande">
-      <a href="restos/doc/ponencia-doc.docx" target="_blank">Descargar / Abrir Documento</a>
+      <a href="restos/doc/ponencia-doc.docx" target="_blank">Descargar / Abrir DOCX</a>
     </div>
 
     <!-- YOUTUBE GRANDE -->
-    <div id="youtube-1" class="resto-grande">
-      <iframe width="90%" height="500" 
+    <div id="yt-1" class="resto-grande youtube">
+      <iframe 
         src="https://www.youtube.com/embed/D_FuqCposKk" 
-        title="YouTube video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        title="YouTube video" 
         allowfullscreen>
       </iframe>
     </div>
 
   </main>
 
+  <!-- JS -->
   <script>
-    // Scroll al contenedor grande correspondiente
-    document.querySelectorAll('.resto.miniatura').forEach(mini => {
-      mini.addEventListener('click', () => {
-        const targetId = mini.getAttribute('data-target');
+    // Función para scroll al contenido grande
+    document.querySelectorAll('.restos .resto').forEach(resto => {
+      resto.addEventListener('click', () => {
+        const targetId = resto.dataset.target;
         const target = document.getElementById(targetId);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if(target) {
+          target.scrollIntoView({behavior: 'smooth'});
         }
       });
     });
   </script>
+
+</body>
+</html>
 
 </body>
 </html>
