@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-/* CONTENIDO */
+/* CONTENIDO MINIATURA */
 .resto img,
 .resto video {
   width: 100%;
@@ -71,6 +71,23 @@
   inset: 0;
   cursor: default;
 }
+
+/* ---------- CONTENEDORES GRANDES (IMAGEN, VIDEO, YOUTUBE) ---------- */
+
+.resto-grande {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.resto-grande img,
+.resto-grande video,
+.resto-grande iframe {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
 
 
 
