@@ -11,45 +11,44 @@
 
 <body>
 
-  <!-- MENÚ -->
   <nav class="menu">
     <a href="pinturas.html">pinturas</a>
     <a href="textos.html">textos</a>
     <a href="restos.html" class="activo">restos</a>
   </nav>
 
-  <!-- GRILLA MINIATURAS -->
   <main class="contenido restos">
 
+    <!-- GRILLA DE MINIATURAS -->
     <div class="grilla-restos">
 
       <!-- IMAGEN -->
-      <a class="resto" href="#img-1">
-        <img src="restos/img/img-flyer.jpg" alt="Imagen Flyer">
-      </a>
+      <div class="resto miniatura" data-target="img-1">
+        <img src="restos/img/img-flyer.jpg" alt="">
+      </div>
 
       <!-- VIDEO LOCAL -->
-      <a class="resto" href="#video-1">
+      <div class="resto miniatura" data-target="video-1">
         <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline></video>
-      </a>
+      </div>
 
       <!-- DOCX -->
-      <a class="resto" href="#doc-1">
-        <img src="restos/img/img-flyer.jpg" alt="Documento">
-      </a>
+      <div class="resto miniatura" data-target="doc-1">
+        <img src="restos/img/img-flyer.jpg" alt="">
+      </div>
 
       <!-- YOUTUBE -->
-      <a class="resto" href="#yt-1">
-        <img src="https://img.youtube.com/vi/D_FuqCposKk/maxresdefault.jpg" alt="Miniatura YouTube">
-      </a>
+      <div class="resto miniatura" data-target="youtube-1">
+        <img src="https://img.youtube.com/vi/D_FuqCposKk/hqdefault.jpg" alt="Miniatura YouTube">
+      </div>
 
     </div>
 
-    <!-- CONTENEDORES GRANDES -->
+    <!-- CONTENEDORES GRANDES ABAJO -->
 
     <!-- IMAGEN GRANDE -->
     <div id="img-1" class="resto-grande">
-      <img src="restos/img/img-flyer.jpg" alt="Imagen Grande Flyer">
+      <img src="restos/img/img-flyer.jpg" alt="">
     </div>
 
     <!-- VIDEO LOCAL GRANDE -->
@@ -57,25 +56,37 @@
       <video src="restos/videos/video-decadencia.mp4" muted autoplay loop playsinline controls></video>
     </div>
 
-    <!-- DOCX GRANDE (abrirá en nueva pestaña) -->
+    <!-- DOCX GRANDE -->
     <div id="doc-1" class="resto-grande">
-      <a href="restos/doc/ponencia-doc.docx" target="_blank">Descargar/Ver Documento</a>
+      <a href="restos/doc/ponencia-doc.docx" target="_blank">Descargar / Abrir Documento</a>
     </div>
 
     <!-- YOUTUBE GRANDE -->
-    <div id="yt-1" class="resto-grande">
-      <iframe width="800" height="450"
-              src="https://www.youtube.com/embed/D_FuqCposKk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
+    <div id="youtube-1" class="resto-grande">
+      <iframe width="90%" height="500" 
+        src="https://www.youtube.com/embed/D_FuqCposKk" 
+        title="YouTube video" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
       </iframe>
     </div>
 
   </main>
 
-  <script src="restos.js"></script>
+  <script>
+    // Scroll al contenedor grande correspondiente
+    document.querySelectorAll('.resto.miniatura').forEach(mini => {
+      mini.addEventListener('click', () => {
+        const targetId = mini.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
+
 
