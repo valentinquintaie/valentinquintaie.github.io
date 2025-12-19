@@ -3,20 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Restos</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="restos.css">
 </head>
 
 <body>
-
-<nav class="menu">
-  <a href="pinturas.html">pinturas</a>
-  <a href="textos.html">textos</a>
-  <a href="restos.html" class="activo">restos</a>
-</nav>
 
 <main class="contenido restos">
 
@@ -28,10 +18,10 @@
 
   <!-- CABEZA -->
   <a href="#resentimiento" class="resto">
-    <img src="restos/img/img-resentimiento.jepg">
+    <img src="restos/img/img-resentimiento.jpeg">
   </a>
 
-  <!-- VIDEO LOCAL (preview) -->
+  <!-- VIDEO LOCAL -->
   <a href="#decadencia" class="resto">
     <video autoplay muted loop playsinline>
       <source src="restos/videos/video-decadencia.mp4">
@@ -50,12 +40,20 @@
 
   <!-- DESPERDIGADAS -->
   <a href="#delavalle" class="resto"><img src="restos/img/img-delavalle.jpg"></a>
+  <a href="#santoro" class="resto"><img src="restos/img/img-santoro.jpg"></a>
+  <a href="#tallercelular" class="resto"><img src="restos/img/img-tallercelular.jpg"></a>
+  <a href="#odioeltrabajo" class="resto"><img src="restos/img/img-odioeltrabajo.jpg"></a>
+
+  <!-- 8M -->
+  <a href="#m8" class="resto"><img src="restos/img/img-8m.jpg"></a>
+  <a href="#m8-2" class="resto"><img src="restos/img/img-8m2.jpg"></a>
+  <a href="#m8-3" class="resto"><img src="restos/img/img-8m3.jpg"></a>
+
   <a href="#potaxie" class="resto"><img src="restos/img/img-potaxie.png"></a>
   <a href="#parlantes" class="resto"><img src="restos/img/img-parlantes.png"></a>
   <a href="#eccehomo" class="resto"><img src="restos/img/img-eccehomo.png"></a>
 
-  <!-- MUESTRAS (AGRUPADAS) -->
-  <a href="#muestra1" class="resto"><img src="restos/img/img-muestra1.jpg"></a>
+  <!-- MUESTRAS -->
   <a href="#muestra2" class="resto"><img src="restos/img/img-muestra2.jpg"></a>
   <a href="#muestra3" class="resto"><img src="restos/img/img-muestra3.jpg"></a>
   <a href="#muestra4" class="resto"><img src="restos/img/img-muestra4.jpg"></a>
@@ -74,29 +72,20 @@
   <a href="#amantes" class="resto"><img src="restos/img/img-amantes.webp"></a>
   <a href="#amantes2" class="resto"><img src="restos/img/img-amantes2.jpeg"></a>
 
-  <!-- LOBO + KDA -->
+  <!-- RESTO -->
+  <a href="#pena1" class="resto"><img src="restos/img/img-peña1.jpg"></a>
+  <a href="#pena2" class="resto"><img src="restos/img/img-peña2.webp"></a>
   <a href="#lobo" class="resto"><img src="restos/img/img-lobo.webp"></a>
   <a href="#kda" class="resto"><img src="restos/img/img-kda.jpg"></a>
-
-  <!-- RESTO -->
-  <a href="#santoro" class="resto"><img src="restos/img/img-santoro.jpg"></a>
-  <a href="#tallercelular" class="resto"><img src="restos/img/img-tallercelular.jpg"></a>
-  <a href="#odioeltrabajo" class="resto"><img src="restos/img/img-odioeltrabajo.jpg"></a>
   <a href="#mandrilaje" class="resto"><img src="restos/img/img-mandrilaje.jpg"></a>
+  <a href="#mandrillaje" class="resto"><img src="restos/img/img-mandrillaje.jpg"></a>
   <a href="#mussolini" class="resto"><img src="restos/img/img-mussolini.jpg"></a>
   <a href="#pantera" class="resto"><img src="restos/img/img-pantera.jpg"></a>
   <a href="#troll" class="resto"><img src="restos/img/img-troll.webp"></a>
   <a href="#cerda" class="resto"><img src="restos/img/img-cerda.jpg"></a>
   <a href="#taller1" class="resto"><img src="restos/img/img-taller1.jpg"></a>
   <a href="#taller2" class="resto"><img src="restos/img/img-taller2.jpg"></a>
-  <a href="#peña" class="resto"><img src="restos/img/img-peña.jpg"></a>
-  <a href="#peña2" class="resto"><img src="restos/img/img-peña2.webp"></a>
-
-
   <a href="#sister" class="resto"><img src="restos/img/img-sister.jpg"></a>
-  <a href="#8m" class="resto"><img src="restos/img/img-8m.jpg"></a>
-  <a href="#8m2" class="resto"><img src="restos/img/img-8m2.jpg"></a>
-  <a href="#8m3" class="resto"><img src="restos/img/img-8m3.jpg"></a>
 
 </section>
 
@@ -104,7 +93,8 @@
 <!-- PIEZAS GRANDES -->
 <!-- ===================== -->
 
-<section id="resentimiento" class="resto-grande"><img src="restos/img/img-resentimiento.jpg"></section>
+<section id="resentimiento" class="resto-grande"><img src="restos/img/img-resentimiento.jpeg"></section>
+
 <section id="decadencia" class="resto-grande">
   <video controls>
     <source src="restos/videos/video-decadencia.mp4">
@@ -112,63 +102,48 @@
 </section>
 
 <section id="ponencia" class="resto-grande">
-  <a href="restos/doc/doc-ponencia.docx" target="_blank">
-    <img src="restos/img/img-flyer.jpg">
-  </a>
+  <a href="restos/doc/doc-ponencia.docx" target="_blank">Descargar ponencia</a>
 </section>
 
 <section id="yt-1" class="resto-grande">
-  <iframe
+  <iframe width="100%" height="500"
     src="https://www.youtube.com/embed/D_FuqCposKk"
-    allowfullscreen>
+    frameborder="0" allowfullscreen>
   </iframe>
 </section>
 
-<!-- IMÁGENES GRANDES -->
+<!-- TODAS LAS IMÁGENES GRANDES -->
 <section id="delavalle" class="resto-grande"><img src="restos/img/img-delavalle.jpg"></section>
-<section id="potaxie" class="resto-grande"><img src="restos/img/img-potaxie.jpg"></section>
-<section id="parlantes" class="resto-grande"><img src="restos/img/img-parlantes.jpg"></section>
-<section id="eccehomo" class="resto-grande"><img src="restos/img/img-eccehomo.jpg"></section>
-
-<section id="muestra1" class="resto-grande"><img src="restos/img/img-muestra1.jpg"></section>
-<section id="muestra2" class="resto-grande"><img src="restos/img/img-muestra2.jpg"></section>
-<section id="muestra3" class="resto-grande"><img src="restos/img/img-muestra3.jpg"></section>
-<section id="muestra4" class="resto-grande"><img src="restos/img/img-muestra4.jpg"></section>
-<section id="muestra5" class="resto-grande"><img src="restos/img/img-muestra5.jpg"></section>
-<section id="muestra6" class="resto-grande"><img src="restos/img/img-muestra6.jpg"></section>
-<section id="muestra7" class="resto-grande"><img src="restos/img/img-muestra7.jpg"></section>
-<section id="muestra8" class="resto-grande"><img src="restos/img/img-muestra8.jpg"></section>
-<section id="muestra9" class="resto-grande"><img src="restos/img/img-muestra9.jpg"></section>
-<section id="muestra10" class="resto-grande"><img src="restos/img/img-muestra10.jpg"></section>
-<section id="muestra11" class="resto-grande"><img src="restos/img/img-muestra11.jpg"></section>
-<section id="muestra12" class="resto-grande"><img src="restos/img/img-muestra12.jpg"></section>
-<section id="muestra13" class="resto-grande"><img src="restos/img/img-muestra13.jpg"></section>
-<section id="muestra14" class="resto-grande"><img src="restos/img/img-muestra14.jpg"></section>
-
-<section id="amantes" class="resto-grande"><img src="restos/img/img-amantes.jpg"></section>
-<section id="amantes2" class="resto-grande"><img src="restos/img/img-amantes2.jpg"></section>
-
-<section id="lobo" class="resto-grande"><img src="restos/img/img-lobo.jpg"></section>
-<section id="kda" class="resto-grande"><img src="restos/img/img-kda.jpg"></section>
-
 <section id="santoro" class="resto-grande"><img src="restos/img/img-santoro.jpg"></section>
 <section id="tallercelular" class="resto-grande"><img src="restos/img/img-tallercelular.jpg"></section>
 <section id="odioeltrabajo" class="resto-grande"><img src="restos/img/img-odioeltrabajo.jpg"></section>
+
+<section id="m8" class="resto-grande"><img src="restos/img/img-8m.jpg"></section>
+<section id="m8-2" class="resto-grande"><img src="restos/img/img-8m2.jpg"></section>
+<section id="m8-3" class="resto-grande"><img src="restos/img/img-8m3.jpg"></section>
+
+<section id="potaxie" class="resto-grande"><img src="restos/img/img-potaxie.png"></section>
+<section id="parlantes" class="resto-grande"><img src="restos/img/img-parlantes.png"></section>
+<section id="eccehomo" class="resto-grande"><img src="restos/img/img-eccehomo.png"></section>
+
+<section id="amantes" class="resto-grande"><img src="restos/img/img-amantes.webp"></section>
+<section id="amantes2" class="resto-grande"><img src="restos/img/img-amantes2.jpeg"></section>
+
+<section id="pena1" class="resto-grande"><img src="restos/img/img-peña1.jpg"></section>
+<section id="pena2" class="resto-grande"><img src="restos/img/img-peña2.webp"></section>
+<section id="lobo" class="resto-grande"><img src="restos/img/img-lobo.webp"></section>
+<section id="kda" class="resto-grande"><img src="restos/img/img-kda.jpg"></section>
 <section id="mandrilaje" class="resto-grande"><img src="restos/img/img-mandrilaje.jpg"></section>
+<section id="mandrillaje" class="resto-grande"><img src="restos/img/img-mandrillaje.jpg"></section>
 <section id="mussolini" class="resto-grande"><img src="restos/img/img-mussolini.jpg"></section>
 <section id="pantera" class="resto-grande"><img src="restos/img/img-pantera.jpg"></section>
-<section id="troll" class="resto-grande"><img src="restos/img/img-troll.jpg"></section>
+<section id="troll" class="resto-grande"><img src="restos/img/img-troll.webp"></section>
 <section id="cerda" class="resto-grande"><img src="restos/img/img-cerda.jpg"></section>
 <section id="taller1" class="resto-grande"><img src="restos/img/img-taller1.jpg"></section>
 <section id="taller2" class="resto-grande"><img src="restos/img/img-taller2.jpg"></section>
 <section id="sister" class="resto-grande"><img src="restos/img/img-sister.jpg"></section>
-<section id="8m" class="resto-grande"><img src="restos/img/img-8m.jpg"></section>
-<section id="8m2" class="resto-grande"><img src="restos/img/img-8m2.jpg"></section>
-<section id="8m3" class="resto-grande"><img src="restos/img/img-8m3.jpg"></section>
 
 </main>
-
 </body>
 </html>
-
 
